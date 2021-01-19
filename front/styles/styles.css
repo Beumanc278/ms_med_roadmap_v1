@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    margin-left: 10px;
+    text-align: center;
+}
+
+input:invalid:not(:placeholder-shown) {border-color: red}
+input:valid:not(:placeholder-shown) {border-color: green}
+
+label {
+    margin: 80px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#button-field{
+    position: relative;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+#notif-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.toast {
+    padding: 2rem;
+    background-color: #66CDAA;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.error-toast {
+    padding: 2rem;
+    background-color: #FA8072;
+    border-radius: 10px;
+    margin: 1rem;
+}

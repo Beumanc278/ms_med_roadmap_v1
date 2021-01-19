@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Сформировать маршрутный лист</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body>
+        <div id="notif-container"></div>
+        <div id="main-container">
+            
+            <h2 id="main-title">Формирование маршрутного листа для медосмотра</h2>
+            <h3 id="num-prikaz">Приказ № 302 от 12 апреля 2011</h3>
+
+
+            <div id="pril1-field">
+                <label for="pril1-input">Введите номер из Приложения 1:</label>
+                <input type="text" id="pril1-input" class="input-field" pattern="[0-9\.]+" placeholder="1.1.1">
+            </div>
+
+            <div id="pril2-field">
+                <label for="pril2-input">Введите номер из Приложения 2:</label>
+                <input type="text" id="pril2-input" class="input-field" pattern="[0-9\.]+" placeholder="1.">
+            </div>
+            <div id="button-field">
+                <button id="btn-load-roadmap" type="submit">Скачать маршрутный лист</button>
+                <button id="btn-clear">Сбросить</button>
+            </div>
+            
+        </div>
+        
+
+        <script src='script/script.js'></script>
+    </body>
+
+
+</html>
